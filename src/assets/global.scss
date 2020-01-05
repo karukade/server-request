@@ -1,0 +1,63 @@
+@import "reset";
+
+body {
+  font-family: apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","メイリオ",Meiryo,sans-serif;
+  color: #333;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+label {
+  display: block;
+}
+
+.container {
+  padding: 40px 0 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-wrapper {
+  > * + * {
+    margin-top: 18px;
+  }
+  + .form-wrapper {
+    margin-top: 42px;
+  }
+}
+
+.btn-wrap {
+  text-align: center;
+}
+.btn-wrap-right {
+  text-align: right;
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  font-weight: bold;
+  padding: 16px;
+  min-width: 300px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: #fff;
+  border: #eee solid 2px;
+  padding: 10px;
+  min-width: 160px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  &:disabled {
+    opacity: 0.1;
+  }
+}
